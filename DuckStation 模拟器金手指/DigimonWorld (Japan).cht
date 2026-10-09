@@ -1,0 +1,896 @@
+﻿# 《数码兽世界》日版 DuckStation 金手指文件（SLPS-01797 初版 / v1.0）
+# 版本识别：标题画面的 “Press Start Button” 为白色；不适用于绿色文字修正版或 SLPS-91233。
+# 启用会永久改变存档的解锁或物品代码前，请先备份记忆卡。
+# 标记为“未验证，无代码”的条目不会写入游戏内存。
+
+
+#group=育成状态
+#type=Gameshark
+#activation=EndFrame
+#note=同时固定饥饿和排便倒计时
+[不会饿也不需要上厕所]
+80141D56 00FF
+80141D30 00FF
+
+#group=育成状态
+#type=Gameshark
+#activation=EndFrame
+#note=疲劳值固定为0
+[不劳累]
+80141D3A 0000
+
+#group=寿命与战斗
+#type=Gameshark
+#activation=EndFrame
+#note=把日版伙伴剩余寿命固定为360小时；会影响正常转生流程
+[伙伴永久不老死]
+80141D60 0168
+
+#group=寿命与战斗
+#type=Gameshark
+#activation=Manual
+#note=手动执行一次，把剩余寿命设为0；执行后关闭，等待游戏触发寿终事件
+[伙伴立即寿终]
+Type = Gameshark
+Activation = Manual
+80141D60 0000
+
+#group=基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=已验证：日版初版 v1.0
+[攻击力最大]
+8016B0BC 03E7
+
+#group=基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=已验证：日版初版 v1.0
+[防御力最大]
+8016B0BE 03E7
+
+#group=基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=已验证：日版初版 v1.0
+[速度最大]
+8016B0C0 03E7
+
+#group=基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=已验证：日版初版 v1.0
+[智力最大]
+8016B0C2 03E7
+
+#group=基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=已验证：日版初版 v1.0
+[HP上限最大]
+8016B0CC 270F
+
+#group=基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=已验证：日版初版 v1.0
+[MP上限最大]
+8016B0CE 270F
+
+#group=基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=已验证：日版初版 v1.0
+[当前HP无限]
+8016B0D0 270F
+
+#group=基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=已验证：日版初版 v1.0
+[当前MP无限]
+8016B0D2 270F
+
+#group=基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=已验证：日版初版 v1.0
+[金钱最大]
+8013E294 967F
+8013E296 0098
+
+#group=基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=已验证：日版初版 v1.0
+[快乐度最大]
+80141D42 0064
+
+#group=基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=已验证：日版初版 v1.0
+[纪律最大]
+80141D40 0064
+
+#group=基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=已验证：日版初版 v1.0；已拆分为 DuckStation 可用的 8 位写入
+[习得全部技能]
+3016B0DC 00FF
+3016B0DD 00FF
+3016B0DE 00FF
+3016B0DF 00FF
+3016B0E0 00FF
+3016B0E1 00FF
+3016B0E2 00FF
+3016B0E3 00FF
+
+#group=基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=根据已确认的日版连续存档结构映射，尚待实机验证；启用前请备份记忆卡
+[获得全部奖牌]
+801638A6 FFFF
+801638A8 FFFF
+
+#group=图鉴与收集
+#type=Gameshark
+#activation=Manual
+#note=开启全部进化图鉴记录；手动执行一次后保存并关闭
+[全部进化图鉴]
+Type = Gameshark
+Activation = Manual
+301638B9 00FF
+801638BA FFFF
+801638BC FFFF
+801638BE FFFF
+301638C0 00FF
+
+#group=其他功能
+#type=Gameshark
+#activation=EndFrame
+#note=根据已确认的日版连续存档结构映射，尚待实机验证；启用前请备份记忆卡
+[获得全部卡片]
+50002101 0000
+30163858 00FF
+
+#group=物品与背包
+#type=Gameshark
+#activation=EndFrame
+#note=将背包容量固定为游戏上限30格
+[背包空间最大（30格）]
+30145F86 001E
+
+#group=物品数量
+#type=Gameshark
+#activation=EndFrame
+#note=一次把背包第1至10格的数量设为99
+[背包全部10格数量99]
+50000A01 0000
+30145F4A 0063
+
+#group=物品数量
+#type=Gameshark
+#activation=EndFrame
+#note=日版所持物品数量地址；数值 0063 代表 99 个
+[背包第1格数量最大]
+30145F4A 0063
+
+#group=物品数量
+#type=Gameshark
+#activation=EndFrame
+#note=日版所持物品数量地址；数值 0063 代表 99 个
+[背包第2格数量最大]
+30145F4B 0063
+
+#group=物品数量
+#type=Gameshark
+#activation=EndFrame
+#note=日版所持物品数量地址；数值 0063 代表 99 个
+[背包第3格数量最大]
+30145F4C 0063
+
+#group=物品数量
+#type=Gameshark
+#activation=EndFrame
+#note=日版所持物品数量地址；数值 0063 代表 99 个
+[背包第4格数量最大]
+30145F4D 0063
+
+#group=物品数量
+#type=Gameshark
+#activation=EndFrame
+#note=日版所持物品数量地址；数值 0063 代表 99 个
+[背包第5格数量最大]
+30145F4E 0063
+
+#group=物品数量
+#type=Gameshark
+#activation=EndFrame
+#note=日版所持物品数量地址；数值 0063 代表 99 个
+[背包第6格数量最大]
+30145F4F 0063
+
+#group=物品数量
+#type=Gameshark
+#activation=EndFrame
+#note=日版所持物品数量地址；数值 0063 代表 99 个
+[背包第7格数量最大]
+30145F50 0063
+
+#group=物品数量
+#type=Gameshark
+#activation=EndFrame
+#note=日版所持物品数量地址；数值 0063 代表 99 个
+[背包第8格数量最大]
+30145F51 0063
+
+#group=物品数量
+#type=Gameshark
+#activation=EndFrame
+#note=日版所持物品数量地址；数值 0063 代表 99 个
+[背包第9格数量最大]
+30145F52 0063
+
+#group=物品数量
+#type=Gameshark
+#activation=EndFrame
+#note=日版所持物品数量地址；数值 0063 代表 99 个
+[背包第10格数量最大]
+30145F53 0063
+
+#group=未验证－基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=未验证：尚未找到可靠的日版初版地址；此条目故意不包含内存写入代码
+[按圆圈键直接通关]
+
+#group=寿命与战斗
+#type=Gameshark
+#activation=EndFrame
+#note=按日版战斗实体结构映射；同时把最多5个敌人的当前HP固定为0
+[敌人立即死亡]
+8016B150 0000
+8016B288 0000
+8016B2F0 0000
+8016B220 0000
+8016B1B8 0000
+
+#group=基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=已验证：日版初版 v1.0
+[生命数保持3]
+3016B100 0003
+
+#group=未验证－基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=未验证：尚未找到可靠的日版初版地址；此条目故意不包含内存写入代码
+[必杀槽始终充足]
+
+#group=未验证－基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=未验证：尚未找到可靠的日版初版地址；此条目故意不包含内存写入代码
+[按方块键拉一堆便便]
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[数码菇]
+30163804 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[雪割蘑菇]
+30163805 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[豪华蘑菇]
+30163806 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[数码松果]
+30163807 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[蓝苹果]
+30163808 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[阿西罗果]
+30163809 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[黄金橡果]
+3016380A 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[重草莓]
+3016380B 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[天然甜栗]
+3016380C 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[曼德拉草]
+3016380D 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[食用仙人掌]
+3016380E 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[橙香蕉]
+3016380F 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[大力草果]
+30163810 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[强力冰晶]
+30163811 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[速度叶]
+30163812 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[贤者果]
+30163813 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[肌肉山药]
+30163814 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[镇静果]
+30163815 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[数码鳀鱼]
+30163816 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[数码鲷鱼]
+30163817 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[数码鳟鱼]
+30163818 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[黑鳟鱼]
+30163819 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[数码鲶鱼]
+3016381A 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[数码鲈鱼]
+3016381B 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[发霉肉]
+3016381C 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[快乐蘑菇]
+3016381D 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[链瓜]
+3016381E 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[灰色爪]
+3016381F 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[火焰球]
+30163820 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[火焰之翼]
+30163821 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[铁蹄]
+30163822 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[独角石]
+30163823 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[钢钻]
+30163824 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[白牙]
+30163825 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[黑翼]
+30163826 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[刺棒]
+30163827 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[炽热鬃毛]
+30163828 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[白翼]
+30163829 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[破布]
+3016382A 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[电气环]
+3016382B 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[彩虹笛]
+3016382C 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[风向鸡]
+3016382D 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[圣角]
+3016382E 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[重头盔]
+3016382F 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[锯齿剪]
+30163830 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[有机肥料]
+30163831 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[伊贺秘传书]
+30163832 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[供奉酒]
+30163833 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[北极星印记]
+30163834 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[红贝壳]
+30163835 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[硬鳞]
+30163836 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[秘银]
+30163837 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[冰水晶]
+30163838 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[生发剂]
+30163839 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[太阳镜]
+3016383A 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[金属零件]
+3016383B 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[致命骨]
+3016383C 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[电子零件]
+3016383D 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[巨型手臂]
+3016383E 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[银球]
+3016383F 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[金属装甲]
+30163840 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[链锯]
+30163841 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[小长矛]
+30163842 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[X绷带]
+30163843 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[射线枪]
+30163844 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[黄金香蕉]
+30163845 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[神秘蛋]
+30163846 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[红宝石]
+30163847 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[甲虫珍珠]
+30163848 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[珊瑚护符]
+30163849 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[月光镜]
+3016384A 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[蓝笛]
+3016384B 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[旧钓竿]
+3016384C 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[高级钓竿]
+3016384D 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[狮子兽石]
+3016384E 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[豪宅钥匙]
+3016384F 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[齿轮]
+30163850 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[雨草果]
+30163851 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[牛排]
+30163852 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[冰箱钥匙]
+30163853 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[古代文字解码器]
+30163854 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[千兆手臂]
+30163855 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[高贵鬃毛]
+30163856 0063
+
+#group=仓库物品数量最大
+#type=Gameshark
+#activation=EndFrame
+#note=依据已验证的日版仓库基址及物品编号顺序映射；使用前请备份存档
+[金属香蕉]
+30163857 0063
+
+#group=未验证－其他功能
+#type=Gameshark
+#activation=EndFrame
+#note=未验证：尚未找到可靠的日版初版地址；此条目故意不包含内存写入代码
+[全部数码兽育成记录]
+
+#group=未验证－基础功能
+#type=Gameshark
+#activation=EndFrame
+#note=未验证：尚未找到可靠的日版初版地址；此条目故意不包含内存写入代码
+[16:9宽屏]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
