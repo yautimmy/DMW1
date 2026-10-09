@@ -1,0 +1,26 @@
+﻿《数码宝贝世界》日版简体中文补丁 v214
+
+适用原版：DigimonWorld (Japan).bin
+原版大小：381160416 字节
+原版 SHA-256：A99CE1CF5C3524B866603FE29F412C956131E7A2D48807E2508D9304BA6F20CD
+
+使用方法：
+1. 把日版原始 BIN 拖到“应用汉化补丁.bat”上。
+2. 也可以把原盘命名为 DigimonWorld (Japan).bin，放入补丁目录后双击 BAT。
+3. 等待程序完成原盘校验、补丁应用和结果校验。
+4. 使用 DigimonWorld CN.cue 启动游戏。
+
+生成结果：DigimonWorld CN.bin
+生成大小：382679808 字节
+生成 SHA-256：3664DC430D3FC10AA571AAE46DFF4C43012F39E2069A8F9F40021B2231CBEC5F
+
+注意：
+- 本补丁只适用于上述 SHA-256 的日版原始 BIN。
+- 不要直接对 CHD、PBP、ECM、压缩包、其他地区版本或旧汉化版应用。
+- 补丁包不包含完整游戏镜像。
+- 无需安装插件、Python 或 xdelta；补丁包已经包含所需程序。
+- 内附的 xdelta3.exe 同时兼容 32 位和 64 位 Windows。
+- 支持 Windows 7、8.1、10、11；优先使用 PowerShell 校验，旧系统自动改用 certutil。
+
+补丁格式：xdelta/VCDIFF
+工具：xdelta3 3.2.0（Apache-2.0）
